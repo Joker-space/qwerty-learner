@@ -13,7 +13,7 @@ COPY package*.json .
 
 COPY yarn.lock .
 
-RUN npm config set registry https://registry.npm.taobao.org
+RUN npm config set registry http://registry.npmmirror.com
 
 RUN npm install yarn -g --force
 
